@@ -31,7 +31,92 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 2500px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 100px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 5px;
+  width: calc(100% / 3 - 10px);
+  min-width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.card img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  margin: 120px;
+  padding: 20px;
+}
+
+.card .heart {
+  position: absolute;
+  right: -100px;
+  width: 60px;
+  top: 150px;
+  z-index: 1;
+  padding: 3px;
+  font-size: 50px;
+  background-color: white;
+}
+
+.card .boxes {
+  position: absolute;
+  bottom: 250px;
+  left: 150px;
+  font-size: 30px;
+}
+
+.card .red-box {
+  background-color: red;
+  color: white;
+  margin-right: 10px;
+}
+
+.card .green-box {
+  background-color: green;
+  color: white;
+  margin-right: 10px;
+}
+
+.card .brand {
+  display: flex;
+  position: relative;
+  top: -120px;
+  left: 150px;
+  font-size: 30px;
+}
+
+.card .name-product {
+  display: flex;
+  position: relative;
+  top: -120px;
+  left: 150px;
+  font-size: 35px;
+}
+
+.card .price {
+  display: flex;
+  position: relative;
+  font-size: 35px;
+  color: red;
+}
+.card .old-price {
+  display: flex;
+  position: relative;
+  font-size: 35px;
+  text-decoration: line-through;
+}
+
+.card .prices span {
+  display: inline-block;
+  position: relative;
+  top: -120px;
+  left: -160px;
 }
